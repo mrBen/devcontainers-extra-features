@@ -1,0 +1,18 @@
+{
+    "id": "shellcheck",
+    "version": "1.0.0",
+    "name": "shellcheck (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/shellcheck",
+    "description": "",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}
