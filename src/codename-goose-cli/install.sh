@@ -19,4 +19,8 @@ $nanolayer_location \
     "ghcr.io/devcontainers-extra/features/gh-release:1.0.25" \
     --option repo='block/goose' --option binaryNames='goose' --option version="$VERSION"
 
+$nanolayer_location \
+    install \
+    apt-get install -y libxcb1
+
 echo 'Done!'
