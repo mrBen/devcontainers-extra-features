@@ -22,8 +22,4 @@ echo "Installing goose $VERSION"
 curl -fsSL "https://github.com/block/goose/releases/download/${VERSION}/download_cli.sh" |
     CONFIGURE=false bash
 
-install -Dm755 /root/.local/bin/goose /usr/local/bin/goose
-install -Dm755 /root/.local/bin/temporal /usr/local/bin/temporal
-install -Dm755 /root/.local/bin/temporal-service /usr/local/bin/temporal-service
-
 echo 'Done!'

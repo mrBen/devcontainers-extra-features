@@ -15,5 +15,8 @@
         }
     },
     "installsAfter": [
-    ]
+    ],
+    "containerEnv": {
+        "PATH": "/root/.local/bin:$PATH"
+    }
 }
