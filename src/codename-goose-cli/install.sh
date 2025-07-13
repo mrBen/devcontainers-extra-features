@@ -21,6 +21,7 @@ $nanolayer_location \
 
 $nanolayer_location \
     install \
-    apt-get install -y libxcb1
+    apt-get \
+    libxcb1
 
 echo 'Done!'
