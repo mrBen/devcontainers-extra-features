@@ -1,5 +1,5 @@
 
-# codename-goose-cli (codename-goose-cli)
+# codename goose CLI (via Github Releases) (codename-goose-cli)
 
 An open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM
 
