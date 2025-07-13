@@ -22,6 +22,6 @@ echo "Installing goose $VERSION"
 curl -fsSL "https://github.com/block/goose/releases/download/${VERSION}/download_cli.sh" |
     CONFIGURE=false bash
 
-chmod +x /usr/local/bin/goose
+chmod +x /root/.local/bin/goose
 
 echo 'Done!'
