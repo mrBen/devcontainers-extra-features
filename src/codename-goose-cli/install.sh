@@ -22,6 +22,8 @@ echo "Installing goose $VERSION"
 curl -fsSL "https://github.com/block/goose/releases/download/${VERSION}/download_cli.sh" |
     CONFIGURE=false bash
 
-exec $SHELL
+export PATH="/root/.local/bin:$PATH"
+
+source ~/.bashrc
 
 echo 'Done!'
