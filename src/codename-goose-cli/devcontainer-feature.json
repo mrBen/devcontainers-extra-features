@@ -13,10 +13,5 @@
             ],
             "type": "string"
         }
-    },
-    "installsAfter": [
-    ],
-    "containerEnv": {
-        "PATH": "/root/.local/bin:$PATH"
     }
 }

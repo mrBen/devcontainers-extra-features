@@ -11,17 +11,12 @@ source ./library_scripts.sh
 # of the script
 ensure_nanolayer nanolayer_location "v0.5.6"
 
-# Example nanolayer installation via devcontainer-feature
+echo "Installing goose $VERSION"
+
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/curl-apt-get:1.0.16"
-
-echo "Installing goose $VERSION"
-
-curl -fsSL "https://github.com/block/goose/releases/download/${VERSION}/download_cli.sh" |
-    CONFIGURE=false bash
-
-chmod +x /root/.local/bin/goose
+    "ghcr.io/devcontainers-extra/features/gh-release:1.0.25" \
+    --option repo='block/goose' --option binaryNames='goose' --option version="$VERSION"
 
 echo 'Done!'
