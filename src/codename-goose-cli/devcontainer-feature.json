@@ -1,7 +1,7 @@
 {
     "id": "codename-goose-cli",
     "version": "1.0.0",
-    "name": "codename-goose-cli (via GH Releases)",
+    "name": "codename-goose-cli",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/codename-goose-cli",
     "description": "An open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
     "options": {
@@ -15,6 +15,5 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-extra/features/gh-release"
     ]
 }
