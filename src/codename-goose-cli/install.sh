@@ -16,7 +16,7 @@ echo "Installing goose $VERSION"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/gh-release:1.0.25" \
+    "ghcr.io/devcontainers-extra/features/gh-release:1.0.26" \
     --option repo='block/goose' --option binaryNames='goose' --option version="$VERSION"
 
 $nanolayer_location \
