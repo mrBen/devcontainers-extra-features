@@ -7,7 +7,7 @@ An open source, extensible AI agent that goes beyond code suggestions - install,
 
 ```json
 "features": {
-    "ghcr.io/codename-goose-cli/codename-goose-cli:1": {}
+    "ghcr.io/devcontainers-extra/features/codename-goose-cli:1": {}
 }
 ```
 
