@@ -1,14 +1,12 @@
-# exa (via Github Releases) (exa)
+# eza (via Github Releases) (eza)
 
-exa is a modern replacement for ls.
-
-Note: exa is no longer maintained. Use eza instead.
+eza is a modern replacement for ls.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers-extra/features/exa:1": {}
+    "ghcr.io/devcontainers-extra/features/eza:1": {}
 }
 ```
 
