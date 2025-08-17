@@ -1,9 +1,9 @@
 {
-    "id": "exa",
-    "version": "1.0.16",
-    "name": "exa (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/exa",
-    "description": "exa is a modern replacement for ls. No longer maintained; use eza instead",
+    "id": "eza",
+    "version": "1.0.0",
+    "name": "eza (via GitHub Releases)",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/eza",
+    "description": "eza is a modern replacement for ls.",
     "options": {
         "version": {
             "default": "latest",
