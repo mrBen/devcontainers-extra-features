@@ -1,0 +1,20 @@
+{
+    "id": "bun",
+    "version": "1.0.0",
+    "name": "Bun",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/bun",
+    "description": "Installs the Bun JavaScript runtime and package manager via GitHub Releases using the gh-release helper.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/gh-release"
+    ]
+}
