@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "name": "Bun",
     "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/bun",
-    "description": "Installs the Bun JavaScript runtime and package manager via GitHub Releases using the gh-release helper.",
+    "description": "Bun is an all-in-one toolkit for JavaScript and TypeScript apps.",
     "options": {
         "version": {
             "default": "latest",

@@ -4,6 +4,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "Bun version is equal to 1.2.21 (via GitHub Releases)" sh -c "bun --version | grep '^1.2.21'"
+check "bun version is equal to 1.2.20" sh -c "bun --version | grep '^1.2.20'"
 
 reportResults

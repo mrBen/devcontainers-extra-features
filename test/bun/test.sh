@@ -4,6 +4,6 @@ set -e
 
 source dev-container-features-test-lib
 
-check "Bun is installed (via GitHub Releases)" bun --version
+check "bun is installed" bun --version
 
 reportResults
