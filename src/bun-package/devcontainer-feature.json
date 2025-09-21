@@ -1,0 +1,30 @@
+{
+    "id": "bun-package",
+    "version": "1.0.0",
+    "name": "Bun package",
+    "documentationURL": "http://github.com/devcontainers-extra/features/tree/main/src/bun-package",
+    "description": "Installs a Bun package globally using Bun.",
+    "options": {
+        "package": {
+            "default": "",
+            "description": "Select the Bun package to install globally.",
+            "type": "string"
+        },
+        "version": {
+            "default": "latest",
+            "description": "Select the version of the Bun package to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        },
+        "nameHint": {
+            "default": "",
+            "description": "Optional: name to use for skip install checks (useful for git / URL / non-npm sources).",
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-extra/features/bun"
+    ]
+}
