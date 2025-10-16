@@ -11,11 +11,31 @@ source ./library_scripts.sh
 # of the script
 ensure_nanolayer nanolayer_location "v0.5.6"
 
+# uv uses uv-`uname -m`-unknown-linux-gnu.tar.gz naming,
+# the default "arm64" filter for aarch64 would match a 32 bit arm binary instead
+arch_segment=""
+case "$(uname -m)" in
+    x86_64)
+        arch_segment="x64"
+        ;;
+    aarch64|arm64)
+        arch_segment="aarch64"
+        ;;
+    *)
+        arch_segment="$(uname -m)"
+        ;;
+esac
+assetRegex="^uv-${arch_segment}-unknown-linux-gnu\\.tar\\.gz$"
+
 # Example nanolayer installation via devcontainer-feature
 $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-extra/features/gh-release:1" \
-    --option repo='astral-sh/uv' --option binaryNames='uv,uvx' --option version="$VERSION" --option libName='uv'
+    --option repo='astral-sh/uv' \
+    --option binaryNames='uv,uvx' \
+    --option assetRegex="$asset_regex" \
+    --option version="$VERSION" \
+    --option libName='uv'
 
 echo 'Done!'
