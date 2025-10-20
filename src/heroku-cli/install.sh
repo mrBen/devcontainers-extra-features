@@ -20,10 +20,10 @@ rm -rf /var/lib/apt/lists/*
 ARCH="$(uname -m)"
 if [ "$ARCH" == "x86_64" ]; then
 	ARCH=x64
+elif [[ "$ARCH" == "aarch64" || "$ARCH" == "arm64" ]]; then
+	ARCH=arm64
 elif [[ "$ARCH" == aarch* ]]; then
 	ARCH=arm
-elif [[ "$ARCH" == "arm64" ]]; then
-	ARCH=arm64
 else
 	echo -e "unsupported arch: $ARCH"
 	exit 1
